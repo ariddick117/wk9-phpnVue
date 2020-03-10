@@ -53,7 +53,7 @@ export default {
                     method: 'POST',
                     body: formData
                 })
-                    .then(res => res.json())
+                    .then(res => res.json()) // get our data back from the php file
                     .then(data => {
                         if (typeof data != "object") { // means that we're not getting a user object back
                             console.warn(data);
